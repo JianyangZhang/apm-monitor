@@ -21,8 +21,9 @@ export class OracleParent extends React.Component<any, any> {
     shouldComponentUpdate(nextProps, nextState) {
     	console.log(nextProps)
     	console.log(this.props)
-    	if (this.props.test == nextProps.test) 
-    		return false;
+    	if (this.props.test == nextProps.test) {
+                return false;
+        }
     	return true;
     }
 
